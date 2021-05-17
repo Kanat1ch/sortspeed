@@ -1,0 +1,58 @@
+@import '../../Variables';
+
+.header {
+  height: 60px;
+  background-color: #333;
+
+  &__container {
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin-right: 5px;
+    }
+
+    span {
+      color: $red
+    }
+  }
+
+  &__nav {
+    height: 100%;
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    padding: 0 20px;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+      background-color: $red;
+    }
+
+    &.active {
+      background-color: $red;
+    }
+  }
+}
